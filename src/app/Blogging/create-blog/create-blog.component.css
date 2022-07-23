@@ -1,0 +1,31 @@
+mat-form-field{
+    margin-top: 50px;
+    width: 100%;
+}
+.post{
+    margin-left: 50%;
+    box-shadow: 5px 5px 5px;
+
+}
+.post:hover{
+
+transform: scale(110%);
+
+}
+.cancel{
+
+    box-shadow: 5px 5px 5px;
+
+}
+.cancel:hover{
+
+transform: scale(110%);
+
+}
+.contain{
+
+border: 1px solid black;
+border-radius: 10px;
+box-shadow: 4px 4px 5px;
+
+}

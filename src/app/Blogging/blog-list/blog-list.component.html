@@ -1,0 +1,24 @@
+<br>
+<br>
+<hr>
+<div class="contain"><mat-accordion multi="true" *ngIf="Blogs.length > 0">
+    <mat-expansion-panel *ngFor="let blog of Blogs">
+        <mat-expansion-panel-header class="title">
+            {{blog.Title}}
+        </mat-expansion-panel-header>
+        <p class="description">{{blog.desc}}</p>
+        <mat-action-row>
+            <p class="date">{{blog.dateT | date: 'MMM d,y, h:mm:ss a'}}</p>
+            <button mat-button color="primary">Edit </button>
+            <button mat-button color="warn">Delete </button>
+        </mat-action-row>
+
+    </mat-expansion-panel>
+
+</mat-accordion>
+</div>
+<div class="Empty">
+<h4 class="blog" *ngIf="Blogs.length <=0">No Blogs to Show here. Create Blog </h4>
+</div>
+
+

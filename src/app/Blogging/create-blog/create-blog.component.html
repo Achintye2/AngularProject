@@ -1,0 +1,41 @@
+<br>
+<br>
+<hr>
+<div class="contain">
+<mat-card>
+    <form (submit)="onBlogAdded(blogForm)" #blogForm="ngForm">
+
+        <mat-form-field>
+           <input type="text"
+            matInput 
+            ngModel
+            name="title" placeholder="Your title" 
+            #title="ngModel"
+            required>
+            </mat-form-field><br>
+            <mat-form-field>
+                <textarea  rows="10" 
+                matInput 
+                ngModel
+                name="description"
+                placeholder="Enter Details" 
+                #description="ngModel"
+                required></textarea>
+            </mat-form-field>
+            <button 
+            class="btn cancel"
+            mat-raised-button
+            color="black">
+                Cancel
+            </button>
+            <button class="btn post"
+            mat-raised-button
+            color="black"
+            type="submit"
+            >
+                PostBlog
+            </button>
+
+    </form>
+    </mat-card>
+    </div>
